@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(310deg, whitesmoke,rgb(210, 207, 207));
+    display: grid;
+    place-content: center;
+}
+form{
+     width: 400px;
+     padding: 10px;
+     background: whitesmoke;
+     border-radius: 5px;
+     box-shadow: 4px 5px 4px rgba(0,0,0,0.21);
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     justify-content: start;
+     gap: 0.5em;
+}
+form h2{
+    margin-bottom: 15px;
+}
+form h2{
+    color: transparent;
+    background: linear-gradient(rgb(255, 15, 83));
+    background-clip: text;
+}
+form h2:hover{
+    text-decoration: none;
+    color: #414040;
+}
+form .input-field{
+    width: 100%;
+    padding: 5px 3%;  
+}
+form .input-field label{
+    font-size: 0.8em;
+    font-weight: 520;
+    color: rgb(253, 16, 91);
+}
+form .input-field input[type='email'],
+form .input-field input[type='password'],
+form .input-field input[type='date']{
+    width: 100%;
+    padding: 6px;
+    margin-top: 2px;
+    border-radius: 4px;
+    border: 1px solid #ba7cae;
+    outline: none;
+}
+form .input-field .radio-field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1.5em;
+    margin-top: 5px;
+}
+form .input-field .radio-field .radio-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5;
+}
+form .input-field .radio-field .radio-box p{
+    font-size: 0.8em;
+    font-weight: 490;
+    color: purple;
+    
+}
+.input-field textarea{
+      width:101.1%;
+      margin-top: 2px;
+      outline: none;
+      border: 1px solid #ba7cae;
+      border-radius:4px ;
+      resize: none;
+}
+form button{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 7px;
+    margin: 15px 0px;
+    background: rgb(244, 19, 82);
+    cursor: pointer;
+    border-radius: 4px;  
+    color: white;
+    font-size: 1em;
+    font-weight: 550;
+    outline: none;
+    border: none;
+}
+.input-field .radio-field .radio-box input[type='checkbox']:checked{
+    width: 20px;
+    height: 20px;
+}
